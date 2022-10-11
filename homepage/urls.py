@@ -6,7 +6,7 @@ urlpatterns = [
     path(r'', views.HomePage.as_view(), name='my_account'),
     path(r'', views.HomePage.as_view(), name='checkout'),
     path(r'', views.HomePage.as_view(), name='index_2'),
-    path(r'', views.HomePage.as_view(), name='about'),
+    path(r'about', views.AboutPage.as_view(), name='about'),
     path(r'', views.HomePage.as_view(), name='shop_3_column'),
     path(r'', views.HomePage.as_view(), name='shop_4_column'),
     path(r'', views.HomePage.as_view(), name='shop_left_sidebar'),
@@ -40,6 +40,6 @@ urlpatterns = [
     path(r'', views.HomePage.as_view(), name='blog_list_right_sidebar'),
     path(r'', views.HomePage.as_view(), name='blog_single_left_sidebar'),
     path(r'', views.HomePage.as_view(), name='blog_single_right_sidebar'),
-    path(r'', views.HomePage.as_view(), name='contact'),
+    path(r'contact', views.ContactPage.as_view(), name='contact'),
     
 ]

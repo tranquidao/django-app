@@ -138,7 +138,7 @@
                             <!-- Single Wedge End -->
                             <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
                                 <i class="icon-handbag"></i>
-                                <span class="header-action-num">01</span>
+                                <span class="header-action-num">0</span>
                                 <!-- <span class="cart-amount">€30.00</span> -->
                             </a>
                             <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
@@ -189,7 +189,7 @@
                             <!-- Single Wedge End -->
                             <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
                                 <i class="icon-handbag"></i>
-                                <span class="header-action-num">01</span>
+                                <span class="header-action-num">0</span>
                                 <!-- <span class="cart-amount">€30.00</span> -->
                             </a>
                             <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
@@ -249,88 +249,17 @@
 
             <div class="offcanvas-menu mb-20px">
                 <ul>
-                    <li><a href="{% url 'index' %}"><span class="menu-text">Home</span></a>
-                    </li>
-                    <li><a href="{% url 'about' %}">About Us</a></li>
-                    <li><a href="#"><span class="menu-text">Shop</span></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="#"><span class="menu-text">Shop Page</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{% url 'shop_3_column' %}">Shop 3 Column</a></li>
-                                    <li><a href="{% url 'shop_4_column' %}">Shop 4 Column</a></li>
-                                    <li><a href="{% url 'shop_left_sidebar' %}">Shop Grid Left Sidebar</a></li>
-                                    <li><a href="{% url 'shop_right_sidebar' %}">Shop Grid Right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">product Details Page</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{% url 'single_product' %}">Product Single</a></li>
-                                    <li><a href="{% url 'single_product_variable' %}">Product Variable</a></li>
-                                    <li><a href="{% url 'single_product_affiliate' %}">Product Affiliate</a></li>
-                                    <li><a href="{% url 'single_product_group' %}">Product Group</a></li>
-                                    <li><a href="{% url 'single_product_tabstyle_2' %}">Product Tab 2</a></li>
-                                    <li><a href="{% url 'single_product_tabstyle_3' %}">Product Tab 3</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">Single Product Page</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{% url 'single_product_slider' %}">Product Slider</a></li>
-                                    <li><a href="{% url 'single_product_gallery_left' %}">Product Gallery Left</a>
-                                    </li>
-                                    <li><a href="{% url 'single_product_gallery_right' %}">Product Gallery Right</a>
-                                    </li>
-                                    <li><a href="{% url 'single_product_sticky_left' %}">Product Sticky Left</a></li>
-                                    <li><a href="{% url 'single_product_sticky_right' %}">Product Sticky Right</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">Other Pages</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{% url 'cart' %}">Cart Page</a></li>
-                                    <li><a href="{% url 'checkout' %}">Checkout Page</a></li>
-                                    <li><a href="{% url 'compare' %}">Compare Page</a></li>
-                                    <li><a href="{% url 'wishlist' %}">Wishlist Page</a></li>
-                                    <li><a href="{% url 'my_account' %}">Account Page</a></li>
-                                    <li><a href="{% url 'login' %}">Login & Register Page</a></li>
-                                    <li><a href="{% url 'empty_cart' %}">Empty Cart Page</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="{% url 'index' %}"><span class="menu-text">Home</span></a></li>
+                    <li><a href="{% url 'shop_3_column' %}"><span class="menu-text">Shop</span></a></li>
                     <li><a href="#"><span class="menu-text">Pages</span></a>
                         <ul class="sub-menu">
-                            <li><a href="{% url '404' %}">404 Page</a></li>
                             <li><a href="{% url 'privacy_policy' %}">Privacy Policy</a></li>
                             <li><a href="{% url 'faq' %}">Faq Page</a></li>
-                            <li><a href="{% url 'comming_soon' %}">Coming Soon Page</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><span class="menu-text">Blog</span></a>
-                        <ul class="sub-menu">
-                            <li><a href="#"><span class="menu-text">Blog Grid</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{% url 'blog_grid_left_sidebar' %}">Blog Grid Left Sidebar</a></li>
-                                    <li><a href="{% url 'blog_grid_right_sidebar' %}">Blog Grid Right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><span class="menu-text">Blog List</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{% url 'blog_list_left_sidebar' %}">Blog List Left Sidebar</a></li>
-                                    <li><a href="{% url 'blog_list_right_sidebar' %}">Blog List Right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><span class="menu-text">Blog Single</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="{% url 'blog_single_left_sidebar' %}">Blog Single Left Sidebar</a></li>
-                                    <li><a href="{% url 'blog_single_right_sidebar' %}">Blog Single Right Sidbar</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="{% url 'blog_grid_left_sidebar' %}"><span class="menu-text">Blog</span></a></li>
                     <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
                 </ul>
             </div>
             <!-- OffCanvas Menu End -->
@@ -343,9 +272,7 @@
                         <a href="#">English <i class="ion-ios-arrow-down"></i></a>
                         <ul class="user-sub-menu">
                             <li><a class="current" href="#">English</a></li>
-                            <li><a href="#"> Italiano</a></li>
-                            <li><a href="#"> Français</a></li>
-                            <li><a href="#"> Filipino</a></li>
+                            <li><a href="#">Vietnamese</a></li>
                         </ul>
                     </li>
                     <!-- Language End -->
@@ -354,9 +281,7 @@
                         <a href="#">USD $ <i class="ion-ios-arrow-down"></i></a>
                         <ul class="user-sub-menu">
                             <li><a class="current" href="#">USD $</a></li>
-                            <li><a href="#">EUR €</a></li>
-                            <li><a href="#">POUND £</a></li>
-                            <li><a href="#">FRANC ₣</a></li>
+                            <li><a href="#">VND ₫</a></li>
                         </ul>
                     </li>
                     <!-- Currency End -->
